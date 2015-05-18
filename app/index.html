@@ -2,6 +2,9 @@
 <html lang="en" ng-app="phonecatApp">
 <head>
   <meta charset="utf-8">
+  <!-- include this if you are not using hashbangs -->
+  <!-- <meta name="fragment" content="!" /> -->
+  <!-- <base href="/angularjs/angular-phonecat/app/"> -->
   <title>Google Phone Gallery</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
@@ -18,11 +21,9 @@
   <script src="js/filters.js"></script>
   <script src="js/services.js"></script>
 </head>
-<body>
-
+<body data-status="{{ status }}">
   <div class="view-container">
     <div ng-view class="view-frame"></div>
   </div>
-
 </body>
 </html>
